@@ -21,6 +21,7 @@ exports.getAllData = async (req, res) => {
 
 exports.addData = async (req, res) => {
   try {
+    console.log(req.body);
     const doc = await Data.create(req.body);
 
     if (!doc) {
