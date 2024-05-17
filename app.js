@@ -6,7 +6,8 @@ const dataRouter = require("./Routers/dataRouter");
 const app = express();
 
 const corsOption = {
-  origin: "http://localhost:5173",
+  // origin: "http://localhost:5173",
+  origin: "*",
   methods: "GET,POST,PUT,DELETE,PATCH,HEAD",
   credential: true,
 };
